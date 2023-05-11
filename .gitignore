@@ -1,1 +1,3 @@
 .prettierignore
+.replit
+replit.nix

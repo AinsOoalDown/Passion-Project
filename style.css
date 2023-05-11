@@ -4,7 +4,7 @@
   --BodyBG: #343541;
   --TitleText: #ececf1;
   --Text: #fff;
-  --Mebe: #0e1525;
+  --NavbarBG: #0e1525;
 }
 
 .light-mode {
@@ -28,7 +28,7 @@ body {
 .navbar {
   box-sizing: border-box;
   flex-basis: auto;
-  background-color: var(--Mebe);
+  background-color: var(--NavbarBG);
   height: 60px;
   width: 100%;
   top: 0px;
