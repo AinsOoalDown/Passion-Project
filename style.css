@@ -1,160 +1,156 @@
 :root {
-	--BG: #444654;
-	--HeaderBG: #202123;
-	--BodyBG: #343541;
-	--TitleText: #ececf1;
-	--Text: #fff;
-	--Mebe: #0E1525;
+  --BG: #444654;
+  --HeaderBG: #202123;
+  --BodyBG: #343541;
+  --TitleText: #ececf1;
+  --Text: #fff;
+  --Mebe: #0e1525;
 }
 
 .light-mode {
-	--BG: #fff;
-	--HeaderBG: #c6c6c7;
-	--BodyBG: #ececf1;
-	--Text: #202123;
-	--TitleText: #202123;
+  --BG: #fff;
+  --HeaderBG: #c6c6c7;
+  --BodyBG: #ececf1;
+  --Text: #202123;
+  --TitleText: #202123;
 }
 
 html {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-	background-color: var(--BG);
-	color: var(--TitleText);
+  background-color: var(--BG);
+  color: var(--TitleText);
 }
 
-
 .navbar {
-	box-sizing: border-box;
-	flex-basis: auto;
-	background-color: var(--Mebe);
-	height: 60px;
-	width: 100%;
-	top: 0px;
-	left: 0px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 8px 12px;
-	position: absolute;
+  box-sizing: border-box;
+  flex-basis: auto;
+  background-color: var(--Mebe);
+  height: 60px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  position: absolute;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin: 0 auto;
-	padding: 60px;
-	box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 60px;
+  box-sizing: border-box;
 }
 
 .header {
-	background-color: var(--HeaderBG);
-	padding: 20px 250px;
-	border-radius: 20px;
-	display: inline-block;
-	margin: 0 10px;
+  background-color: var(--HeaderBG);
+  padding: 20px 250px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 @media (max-width: 1010px) {
-	.header {
-		padding: 20px 200px;
-	}
+  .header {
+    padding: 20px 200px;
+  }
 }
 
 @media (max-width: 910px) {
-	.header {
-		padding: 20px 150px;
-	}
+  .header {
+    padding: 20px 150px;
+  }
 }
 
 @media (max-width: 810px) {
-	.header {
-		padding: 20px 100px;
-	}
+  .header {
+    padding: 20px 100px;
+  }
 }
 
 @media (max-width: 540px) {
-	.header {
-		padding: 20px 50px;
-	}
+  .header {
+    padding: 20px 50px;
+  }
 
-	.container {
-		padding: 65px 5px
-	}
+  .container {
+    padding: 65px 5px;
+  }
 }
 
-
 .title {
-	margin: 0;
-	font-size: 50px;
-	line-height: 60px;
+  margin: 0;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 .description {
-	margin: 50px 20px;
-	max-width: 800px;
+  margin: 50px 20px;
+  max-width: 800px;
 }
 
 @media (max-width: 1000px) {
-	.description {
-		max-width: 600px;
-	}
+  .description {
+    max-width: 600px;
+  }
 }
 
 .description h2 {
-	font-size: 20px;
-	margin: 0 0 10px;
-	text-align: center;
+  font-size: 20px;
+  margin: 0 0 10px;
+  text-align: center;
 }
 
 .description-text {
-	padding: 20px;
-	border: none;
-	border-radius: 5px;
-	background-color: var(--BodyBG);
-	color: var(--Text);
-	font-size: 16px;
-	line-height: 1.5;
-	text-align: justify;
-	overflow-wrap: break-word;
-	display: inline-block;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--BodyBG);
+  color: var(--Text);
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  overflow-wrap: break-word;
+  display: inline-block;
 }
 
 .description-text p {
-	margin: 0;
-	text-indent: 1em;
+  margin: 0;
+  text-indent: 1em;
 }
 
-
-
 .color-toggle {
-	position: absolute;
-	right: 20px;
-	background-color: #f5f5f5;
-	border: none;
-	color: #202123;
-	padding: 10px;
-	border-radius: 5px;
-	cursor: pointer;
+  position: absolute;
+  right: 20px;
+  background-color: #f5f5f5;
+  border: none;
+  color: #202123;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .color-toggle:hover {
-	background-color: #d3d3d3;
+  background-color: #d3d3d3;
 }
 
 .light-mode {
-	color: #202123;
+  color: #202123;
 }
 
 .light-mode .color-toggle {
-	background-color: #202123;
-	color: #ececf1;
+  background-color: #202123;
+  color: #ececf1;
 }
 
 .light-mode .color-toggle:hover {
-	background-color: #3c3c3c;
+  background-color: #3c3c3c;
 }
