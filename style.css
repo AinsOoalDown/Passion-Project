@@ -3,7 +3,8 @@
 	--HeaderBG: #202123;
 	--BodyBG: #343541;
 	--TitleText: #ececf1;
-	--Text: #fff
+	--Text: #fff;
+	--Mebe: #0E1525;
 }
 
 .light-mode {
@@ -25,13 +26,28 @@ body {
 }
 
 
+.navbar {
+	box-sizing: border-box;
+	flex-basis: auto;
+	background-color: var(--Mebe);
+	height: 60px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 12px;
+	position: absolute;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	margin: 0 auto;
-	padding: 20px;
+	padding: 60px;
 	box-sizing: border-box;
 }
 
@@ -43,15 +59,31 @@ body {
 	margin: 0 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1010px) {
 	.header {
-		padding: 20px 50px;
+		padding: 20px 200px;
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 910px) {
 	.header {
-		padding: 20px 20px;
+		padding: 20px 150px;
+	}
+}
+
+@media (max-width: 810px) {
+	.header {
+		padding: 20px 100px;
+	}
+}
+
+@media (max-width: 540px) {
+	.header {
+		padding: 20px 50px;
+	}
+
+	.container {
+		padding: 65px 5px
 	}
 }
 
@@ -65,6 +97,12 @@ body {
 .description {
 	margin: 50px 20px;
 	max-width: 800px;
+}
+
+@media (max-width: 1000px) {
+	.description {
+		max-width: 600px;
+	}
 }
 
 .description h2 {
@@ -95,7 +133,6 @@ body {
 
 .color-toggle {
 	position: absolute;
-	top: 20px;
 	right: 20px;
 	background-color: #f5f5f5;
 	border: none;
